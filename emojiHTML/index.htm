@@ -1,0 +1,52 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="Styles/reset.css" rel="stylesheet" type="text/css" />-->
+    <link href="Styles/myStyle.css" rel="stylesheet" type="text/css" />
+    <!-- Scripts -->
+    <script src="jScripts/jquery-2.1.1.min.js" type="text/javascript"></script> 
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+	
+	    <script type="text/javascript">
+        function myFunc() {
+            var date = new Date();
+            alert("Hi from my parameter-less 'myFunc'. Day of the month: " + date.getDate());
+        }
+
+        function myFuncWithParams(a, b, c, d) {
+            var number = a + 100,
+                text = b + " from my func2",
+                bool = !c,
+                obj = d;
+
+            var alertText = "\nNumber = '" + number + "'" +
+                            "\nText = '" + text + "'" +
+                            "\nBoolean = '" + bool + "'" +
+                            "\nObject.property1 = '" + obj.property1 + "'" +
+                            "\nObject.property2 = '" + obj.property2 + "'" +
+                            "\nObject.property3.lenght = '" + obj.property3.length + "'" + 
+                            "\nObject.property3[2] = '" + obj.property3[2] + "'";
+
+            alert("Hi from my 'myFunc2' with parameters.\n" + alertText);
+        }
+    </script>
+	
+</head>
+<body>
+    <div id="container">
+        <h1>בדיקה</h1>
+		<img src="Img/1.png" alt="Smiley face" height="42" width="42" onclick="testclick(event);">
+		<img src="Img/2.png" alt="Smiley face" height="42" width="42" onclick="testclick(event);">
+		<img src="Img/3.png" alt="Smiley face" height="42" width="42" onclick="testclick(event);">
+		<Div id="LastClicked"><Div>
+		<div>eval test</div>
+	</div>
+</body>
+</html>
